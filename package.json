@@ -1,0 +1,18 @@
+{
+  "name": "rtcpcodechallenge",
+  "version": "1.0.0",
+  "description": "Real Time Collaborative Pathology Code Challenge GSoC 2021",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hemansh Khaneja",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "peer": "^0.6.1",
+    "socket.io": "^4.0.0"
+  }
+}
