@@ -5,6 +5,9 @@ This Repository is my submission of the code challenge for the GSoC 2021 propose
  [Demo Video](https://drive.google.com/file/d/1uNPM9OFe_gXdHaIYgR8oPxngUTi1q4Hq/view?usp=sharing)
 
 # Instructions for running the code
+
+***Please Run the Web Application in Google Chrome as it's been tested for Chrome only as of now***
+
 1. Clone this repository ( **Note this repository is large only because of the sample slides I chose which are around 200MB in size**)
 2. Run command **npm install** in the directory where you cloned this repo.
 3. Open two terminal windows in the same directory
