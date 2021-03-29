@@ -5,8 +5,8 @@ This Repository is my submission of the code challenge for the GSoC 2021 propose
 
 # Instructions for running the code
 1. Clone this repository ( **Note this repository is large only because of the sample slides I chose which are around 200MB in size**)
-2. Run command **npm init**
-3. Open two terminal windows
+2. Run command **npm install** in the directory where you cloned this repo.
+3. Open two terminal windows in the same directory
 4. In one terminal window run **node peer-server.js**
 5. In other terminal window run **node server.js**
 
