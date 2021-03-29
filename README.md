@@ -1,6 +1,7 @@
 # Real_time_Collaborative_Pathology_code_Challenge
 This Repository is my submission of the code challenge for the GSoC 2021 proposed project Real Time Collaborative Pathology by caMicroscope
 
+**Please do watch this demo video to understand the workflow**
 [Demo Video](https://drive.google.com/file/d/1uNPM9OFe_gXdHaIYgR8oPxngUTi1q4Hq/view?usp=sharing)
 
 # Instructions for running the code
