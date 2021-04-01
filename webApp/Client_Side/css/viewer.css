@@ -1,0 +1,298 @@
+body{
+    margin : 0px;
+    padding: 0px;
+    overflow: auto;
+}
+#header {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-variant: small-caps;
+    font-size: 2.8rem;
+    margin: 0px;
+    background-color: #212529;
+    color: white;
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 90vw;
+    z-index: 1;
+}
+#root{
+    width: 100vw;
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+#wrapper{
+    width: 100vw;
+    height: 100%;
+    position: relative;
+}
+.mViewer{
+    width: 100vw;
+    height: 100%;
+}
+#callPanel{
+    position: absolute;
+    width: 24vw;
+    min-width: 300px;
+    left: 38vw;
+    bottom: 5vh;
+    margin: 0;
+    padding: 0;
+    height: 6vh;
+    background-color: #212529;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    z-index: 10;
+}
+.icons{
+    color: white;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 6vh;
+    cursor: pointer;
+}
+#meetingDetails:hover, #video:hover, #chat:hover, #participants:hover, #home:hover, #slides:hover{
+    color: #212529;
+    background-color: white;
+    transition: 0.5s;
+}
+.side_panel{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    width: 20vw;
+    background-color: whitesmoke;
+    overflow: auto;
+    overflow-x: hidden;
+    display: none;
+    border-left-style: groove;
+}
+
+.full_panel{
+    position: absolute;
+    left: 10vw;
+    top: 10%;
+    height: 80%;
+    width: 80vw;
+    background-color: whitesmoke;
+    overflow: auto;
+    overflow-x: hidden;
+    z-index: 2;
+    display: none;
+    border-style: groove;
+}
+
+.spHeads{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-variant: small-caps;
+    font-size: 1.7rem;
+    color: #212529;
+    text-align: center;
+    margin-top: -0.5vh;
+    margin-bottom: 3vh;
+}
+.attendance{
+    width: 80%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+    font-style: italic;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.attendance:nth-child(even){
+    background-color: rgb(222 219 219);
+}
+
+.mdHeads{
+    font-size: 1.4rem;
+    font-variant: small-caps;
+    font-weight: bold;
+    padding-left: 5%;
+    margin-bottom: 1.5vh;
+}
+.mdBody{
+    font-size: 1.4rem;
+    padding-left: 10%;
+    padding-right: 20%;
+    display: grid;
+    margin-bottom: 2vh;
+    grid-template-columns: 1fr min-content;
+}
+#copyToClipboard{
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+#alertBar{
+    position: absolute;
+    bottom : 4vh;
+    right: 2vw;
+    width: max-content;
+    display: none;
+    background-color: #212529;
+    border-style: solid;
+    border-width: 2px;
+    border-color: whitesmoke;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+#messages{
+    display: none;
+    grid-template-rows: max-content max-content 1fr max-content;
+    width: 28vw;
+}
+#chatbox{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    margin-bottom: 0.2vh;
+    margin-left: 0.2vw;
+}
+textarea{
+    margin-bottom: 0.5vh;
+    padding-top: 1.2vh;
+    padding-bottom: 0.3vh;
+    padding-left: 0.6vw;
+    padding-right: 0.6vw;
+    width: 23vw;
+    font-size: 1.2rem;
+    resize: none;
+    height: 3.5vh;
+    background-color: ghostwhite;
+    line-height: 1.5rem;
+}
+textarea:focus { 
+    outline: none !important;
+    /* border-top-style: none;
+    border-left-style: none;
+    border-right-style: none; */
+    border-color: #212529;
+    box-shadow: 0 0.5vh 10px #212529;
+}
+#chatWindow{
+    width: 100%;
+    
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#dm{
+    width: 80%;
+    padding-right: 10%;
+    padding-left: 10%;
+    display: grid;
+    grid-template-rows: max-content max-content;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+#dm:nth-child(1){
+    padding-top: 0;
+}
+#dm:nth-child(even){
+    background-color: rgb(224, 218, 218);
+}
+#author{
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#content{
+    font-size: 1.3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.slideOption{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    padding-left: 10%;
+    padding-right: 20%;
+    font-size: 1.5rem;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+.slideOption:nth-child(odd){
+    background-color: rgb(224, 218, 218);
+}
+
+.crossWrapper{
+    margin: 0;
+    padding: 0;
+    padding-top: 1vh;
+    padding-right: 1.2vw;
+    text-align: right;
+    font-size: 2rem;
+    color: #212529;
+    /* cursor: pointer; */
+}
+.cross{
+    cursor: pointer;
+}
+#avOptions{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-top: -4vh;
+}
+.cam{
+    border-radius: 2.5rem;
+    background-color: white;
+}
+.cam:hover{
+    color: whitesmoke;
+    background-color: #212529;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#videoGallery{
+    display: none;
+    grid-template-rows: max-content max-content 1fr;
+}
+#video-grid {
+    padding-left: 3%;
+    width: 94%;
+    padding-right: 3%;
+    height: 86%;
+    min-height: 500px;
+    margin-top: 3vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-auto-rows: 300px;
+    grid-row-gap: 15px;
+}
+
+.videoWrapper{
+    position: relative;
+}
+
+.nameTag{
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+    background-color: #212529;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    padding: 0.3rem;
+}
+
+video {
+    width: 90%;
+    height: 280px;
+    padding: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    object-fit: cover;
+    border-style: groove;
+}

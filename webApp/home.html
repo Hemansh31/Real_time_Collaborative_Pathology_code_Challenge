@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Code Challenge </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/gsoc.png">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <h1 id="header">
+        Real-time Collaborative Pathology Code Challenge GSoC 2021
+    </h1>
+    <div id="root">
+        <form class="form">
+            <h2>Available Slides</h2>
+            <div class="inputGroup">
+              <input id="s1" name="s1" type="checkbox" onclick="toggle('s1')"/>
+              <label for="s1">Sample Slide One</label>
+            </div>
+            
+            <div class="inputGroup">
+              <input id="s2" name="s2" type="checkbox" onclick="toggle('s2')"/>
+              <label for="s2">Sample Slide Two</label>
+            </div>
+
+            <button class="button" id="startConference"> Start Digital Slide Conferencing </button>
+            <button class="button" id="joinConference"> Join Conference </button>
+        </form>
+    </div>
+    <script src="js/home.js"></script>
+</body>
+</html>

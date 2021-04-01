@@ -1,0 +1,18 @@
+version : "2.0"
+
+services :
+  socket-server :
+    build : "./socket-server"
+    ports :
+      - 8000:8000
+  peer-server :
+    build : "./peer-server"
+    ports :
+      - 9000:9000
+  web-app :
+    build : "./webApp"
+    ports :
+      - 3000:3000
+    environment :
+      socketPath : "http://socket-server:8000"
+      peerPath : "http://peer-server:9000"
