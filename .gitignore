@@ -1,2 +1,3 @@
-node_modules/
-Client_Side/test_slides
+peer-server/node_modules
+webApp/node_modules
+socket-server/node_modules
