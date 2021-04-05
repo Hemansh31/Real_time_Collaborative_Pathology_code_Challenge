@@ -9,12 +9,10 @@ This Repository is my submission of the code challenge for the GSoC 2021 propose
 ***Please Run the Web Application in Google Chrome as it's been tested for Chrome only as of now***
 
 1. Clone this repository ( **Note this repository is large only because of the sample slides I chose which are around 200MB in size**)
-2. Run command **npm install** in the directory where you cloned this repo.
-3. Open two terminal windows in the same directory
-4. In one terminal window run **node peer-server.js**
-5. In other terminal window run **node server.js**
+2. In this directory run **docker-compose -f develop.yml build**.
+3. After this run **docker-compose -f develop.yml up**.
 
-(**Note that peer server is running on *localhost/9000* and server is running on *localhost/3000*.**)
+(**Note that peer server is running on port *9000* and server is running on port *3000*.**)
 
 6. Go to the browser and open **http://localhost:3000/**
 
