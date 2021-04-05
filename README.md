@@ -12,7 +12,7 @@ This Repository is my submission of the code challenge for the GSoC 2021 propose
 2. In this directory run **docker-compose -f develop.yml build**.
 3. After this run **docker-compose -f develop.yml up**.
 
-(**Note that peer server is running on port *9000* and server is running on port *3000*.**)
+(**Note that peer server is running on port *9000*, socket server is running on port *8000* and the web application is running on port *3000*.**)
 
 6. Go to the browser and open **http://localhost:3000/**
 
