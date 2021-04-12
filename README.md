@@ -4,7 +4,7 @@ This Repository is my submission of the code challenge for the GSoC 2021 propose
 **Please do watch this demo video to understand the workflow :** 
  [Demo Video](https://drive.google.com/file/d/1uNPM9OFe_gXdHaIYgR8oPxngUTi1q4Hq/view?usp=sharing)
  
- **For the Dockerized Version of this Code Challenge Checkout the branch *second_version***
+ ### **For the Dockerized Version of this Code Challenge Checkout the branch *second_version***
 
 # Instructions for running the code
 
